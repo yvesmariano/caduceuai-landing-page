@@ -1,4 +1,4 @@
-import { ctaLabel } from "../content.ts";
+import { ctaLabel } from "../content";
 
 export function Cta() {
   return (

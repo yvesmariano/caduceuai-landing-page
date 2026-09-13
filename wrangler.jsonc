@@ -1,14 +1,21 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "caduceuai-landing-page",
-  "main": "worker/index.ts",
+  "main": ".open-next/worker.js",
   "compatibility_date": "2026-09-11",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "observability": {
     "enabled": true
   },
   "upload_source_maps": true,
   "assets": {
-    "not_found_handling": "single-page-application"
-  }
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "caduceuai-landing-page"
+    }
+  ]
 }

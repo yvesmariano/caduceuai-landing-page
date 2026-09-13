@@ -1,4 +1,4 @@
-import { stats, steps } from "../content.ts";
+import { stats, steps } from "../content";
 
 export function HowItWorks() {
   return (

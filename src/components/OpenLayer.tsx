@@ -1,4 +1,4 @@
-import { aiIntegrations, platformNotes } from "../content.ts";
+import { aiIntegrations, platformNotes } from "../content";
 
 export function OpenLayer() {
   return (

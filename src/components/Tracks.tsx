@@ -1,4 +1,4 @@
-import { contadoresItems, empresasItems } from "../content.ts";
+import { contadoresItems, empresasItems } from "../content";
 
 export function Tracks() {
   return (

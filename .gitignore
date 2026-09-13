@@ -96,6 +96,7 @@ dist
 
 ### Wrangler ###
 .wrangler/
+.open-next/
 .env*
 !.env.example
 .dev.vars*

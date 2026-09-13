@@ -1,4 +1,4 @@
-import { agents } from "../content.ts";
+import { agents } from "../content";
 
 export function Agents() {
   return (

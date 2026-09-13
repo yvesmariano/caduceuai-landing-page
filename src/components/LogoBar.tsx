@@ -1,4 +1,4 @@
-import { integrations } from "../content.ts";
+import { integrations } from "../content";
 
 export function LogoBar() {
   return (
