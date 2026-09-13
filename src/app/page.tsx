@@ -1,6 +1,7 @@
 import { Agents } from "@/components/Agents";
 import { Cta } from "@/components/Cta";
 import { Footer } from "@/components/Footer";
+import { Faq } from "@/components/Faq";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Home } from "@/components/Home";
@@ -14,11 +15,12 @@ export default function Page() {
     <Home>
       <Header />
       <Hero />
-      <LogoBar />
-      <Tracks />
       <Agents />
-      <OpenLayer />
       <HowItWorks />
+      <Tracks />
+      <LogoBar />
+      <OpenLayer />
+      <Faq />
       <Cta />
       <Footer />
     </Home>

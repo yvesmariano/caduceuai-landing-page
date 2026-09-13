@@ -1,4 +1,4 @@
-import { aiIntegrations, platformNotes } from "../content";
+import { CONTACT_URL, aiIntegrations, platformNotes } from "../content";
 
 export function OpenLayer() {
   return (
@@ -7,16 +7,15 @@ export function OpenLayer() {
         <div className="open-head">
           <div className="section-head">
             <span className="eyebrow">Camada aberta</span>
-            <h2 className="heading">Plugue a IA que o seu escritório já usa</h2>
+            <h2 className="heading">Conecte a IA às rotinas do escritório</h2>
             <p>
-              A caduceu.ai não é uma caixa fechada. Seus dados contábeis viram
-              ferramentas que Claude, ChatGPT, n8n ou o seu próprio código podem
-              chamar — com permissão por cliente e trilha de auditoria em cada
+              Claude, ChatGPT, n8n e seu próprio código podem consultar e acionar
+              ferramentas contábeis com permissão por cliente e registro de cada
               ação.
             </p>
           </div>
-          <a href="#comecar" className="btn btn-ghost btn-ghost-accent">
-            Ver documentação da API
+          <a href={CONTACT_URL} className="btn btn-ghost btn-ghost-accent">
+            Agendar diagnóstico gratuito
           </a>
         </div>
         <div className="ai-grid">

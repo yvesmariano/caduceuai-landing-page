@@ -1,25 +1,28 @@
-export const ctaLabel = "Começar agora";
+export const CONTACT_URL =
+  "mailto:contato@caduceu.ai?subject=Diagn%C3%B3stico%20do%20meu%20escrit%C3%B3rio";
+
+export const ctaLabel = "Agendar diagnóstico gratuito";
 
 export const empresasItems = [
   {
     title: "Contabilidade completa no seu nome",
-    desc: "Escrituração, balanço, folha e guias — produzidos pelos agentes, assinados pelo seu CRC.",
+    desc: "Escrituração, balanço, folha e guias preparados para a revisão e a responsabilidade técnica do seu escritório.",
   },
   {
     title: "Endereço fiscal incluso",
     desc: "Sede comercial válida para o CNPJ do cliente, com correspondência digitalizada.",
   },
   {
-    title: "Certificado digital grátis",
-    desc: "e-CNPJ A1 emitido e renovado sem custo, todo ano, para cada cliente da carteira.",
+    title: "Certificado digital incluído",
+    desc: "e-CNPJ A1 emitido e renovado dentro das condições do plano contratado.",
   },
   {
     title: "Agente de IA no financeiro do cliente",
-    desc: "Conectado a bancos, gateways e notas: responde e alerta o cliente sem passar por você.",
+    desc: "Conectado a bancos, meios de pagamento e notas para responder dúvidas e alertar o cliente com supervisão do escritório.",
   },
   {
-    title: "Migração da carteira sem custo",
-    desc: "Onboarding em lote das empresas que você já atende, sem parar o faturamento delas.",
+    title: "Implantação da carteira",
+    desc: "Importação em lote das empresas que você já atende, planejada para preservar a continuidade da operação.",
   },
 ];
 
@@ -34,7 +37,7 @@ export const contadoresItems = [
   },
   {
     title: "Conciliação automática",
-    desc: "Extratos, adquirentes e notas casados em minutos — só as exceções chegam a você.",
+    desc: "Extratos, adquirentes e notas são conciliados para sua equipe revisar as divergências.",
   },
   {
     title: "Painel multi-CNPJ",
@@ -62,19 +65,19 @@ export const agents = [
     code: "01 / DECLARAÇÕES",
     title: "Agente de declarações",
     desc: "Monta IRPF, ECD, ECF e DCTF a partir do que já está escriturado, com checklist de divergências.",
-    meta: "6 min de revisão por peça",
+    meta: "Checklist de divergências",
   },
   {
     code: "02 / NOTAS",
     title: "Emissão fiscal em lote",
     desc: "NFS-e e NF-e para a carteira inteira, com validação de tomador, CNAE e retenções.",
-    meta: "5.400+ municípios",
+    meta: "NFS-e · NF-e",
   },
   {
     code: "03 / CAIXA",
     title: "Conciliação automática",
     desc: "Casa extrato, adquirente e nota, agrupa exceções em padrões e aprende suas regras.",
-    meta: "95% de match automático",
+    meta: "Revisão por exceção",
   },
   {
     code: "04 / FISCAL",
@@ -91,7 +94,7 @@ export const agents = [
   {
     code: "06 / ATENDIMENTO",
     title: "Agente de relacionamento",
-    desc: "Cobra documentos, responde o cliente no WhatsApp e só te escala o que precisa de contador.",
+    desc: "Cobra documentos e responde o cliente no WhatsApp, encaminhando para sua equipe as questões que exigem atenção.",
     meta: "white-label",
   },
 ];
@@ -154,23 +157,22 @@ export const steps = [
   {
     n: "I",
     title: "Conecte a carteira",
-    desc: "Seu sistema contábil, bancos e documentos dos clientes — importação em lote, sem redigitar nada.",
+    desc: "Reúna o sistema contábil, bancos e documentos dos clientes em uma implantação orientada por carteira.",
   },
   {
     n: "II",
-    title: "Os agentes assumem a rotina",
-    desc: "Apuração, emissão, conciliação e declarações rodando sozinhas, com trilha de auditoria por decisão.",
+    title: "Automatize o trabalho repetitivo",
+    desc: "Apuração, emissão, conciliação e declarações seguem fluxos com registro de cada ação.",
   },
   {
     n: "III",
-    title: "Sua equipe só revisa exceções",
-    desc: "O time sai da digitação e vai para o que é cobrado caro: revisão técnica, consultoria e novos contratos.",
+    title: "Revise e mantenha o controle",
+    desc: "Sua equipe acompanha pendências, revisa divergências e dedica mais tempo à análise e ao atendimento.",
   },
 ];
 
-export const stats = [
-  { value: "100x", label: "mais clientes por analista" },
-  { value: "95%", label: "da conciliação sem toque humano" },
-  { value: "6 min", label: "de revisão por declaração" },
-  { value: "3 dias", label: "para migrar a carteira inteira" },
+export const workflow = [
+  { label: "Documentos recebidos", status: "Conferido" },
+  { label: "Conciliação", status: "2 divergências" },
+  { label: "Guia", status: "Aguardando revisão" },
 ];

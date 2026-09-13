@@ -25,9 +25,9 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "caduceu.ai",
+  title: "caduceu.ai | IA para escritórios contábeis",
   description:
-    "Plataforma de agentes de IA para escritórios contábeis. Escale a carteira com a mesma equipe.",
+    "Automatize declarações, emissão fiscal e conciliação, acompanhe pendências por CNPJ e mantenha sua equipe no controle.",
   icons: { icon: "/favicon.svg" },
 };
 

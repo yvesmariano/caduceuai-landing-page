@@ -1,4 +1,4 @@
-import { ctaLabel } from "../content";
+import { CONTACT_URL, ctaLabel } from "../content";
 
 export function Cta() {
   return (
@@ -6,17 +6,17 @@ export function Cta() {
       <div className="cta-box">
         <div className="cta-glow" />
         <span className="cta-mark">☤</span>
-        <h2>Coloque os agentes no seu escritório</h2>
+        <h2>Descubra onde seu escritório pode reduzir trabalho manual</h2>
         <p>
-          Diagnóstico gratuito do seu operacional em 15 minutos. Onboarding da
-          carteira sem custo e sem parar a produção.
+          Em uma conversa gratuita de 15 minutos, vamos entender suas rotinas e
+          identificar onde a caduceu.ai pode apoiar sua equipe.
         </p>
         <div className="cta-actions">
-          <a href="#comecar" className="btn btn-primary">
+          <a href={CONTACT_URL} className="btn btn-primary">
             {ctaLabel}
           </a>
-          <a href="#" className="btn btn-ghost">
-            Falar com um humano
+          <a href="#como" className="btn btn-ghost">
+            Entender como funciona
           </a>
         </div>
       </div>

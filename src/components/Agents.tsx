@@ -5,8 +5,8 @@ export function Agents() {
     <section id="agentes" className="section">
       <div className="wrap">
         <div className="section-head">
-          <span className="eyebrow">O panteão de agentes</span>
-          <h2 className="heading">Cada rotina do escritório tem o seu mensageiro</h2>
+          <span className="eyebrow">Rotinas automatizadas</span>
+          <h2 className="heading">Da cobrança de documentos à conciliação</h2>
         </div>
         <div className="card-grid">
           {agents.map((agent) => (

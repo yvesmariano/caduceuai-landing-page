@@ -1,9 +1,11 @@
+import { CONTACT_URL } from "../content";
+
 const links = [
   { href: "#empresas", label: "Empresas" },
   { href: "#contadores", label: "Contadores" },
   { href: "#agentes", label: "Agentes" },
   { href: "#integracoes", label: "Integrações" },
-  { href: "#", label: "Contato" },
+  { href: CONTACT_URL, label: "Contato" },
 ];
 
 export function Footer() {
@@ -20,7 +22,7 @@ export function Footer() {
           </a>
         ))}
       </div>
-      <span className="footer-legal">CRC ativo · dados em conformidade com a LGPD</span>
+      <span className="footer-legal">Controle de acesso · trilha de auditoria</span>
     </footer>
   );
 }

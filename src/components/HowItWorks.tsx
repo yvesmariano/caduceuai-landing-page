@@ -1,4 +1,4 @@
-import { stats, steps } from "../content";
+import { steps, workflow } from "../content";
 
 export function HowItWorks() {
   return (
@@ -6,7 +6,7 @@ export function HowItWorks() {
       <div className="wrap how-grid">
         <div>
           <span className="eyebrow">Como funciona</span>
-          <h2>Três dias para migrar o escritório</h2>
+          <h2>Comece pelas rotinas que mais consomem tempo</h2>
           <div>
             {steps.map((step) => (
               <div key={step.n} className="step">
@@ -21,17 +21,17 @@ export function HowItWorks() {
         </div>
         <div className="how-visual">
           <div className="panel-placeholder">
-            painel multi-CNPJ
-            <br />
-            [screenshot do produto]
-          </div>
-          <div className="stats">
-            {stats.map((stat) => (
-              <div key={stat.label} className="stat">
-                <div className="stat-value">{stat.value}</div>
-                <div className="stat-label">{stat.label}</div>
+            <span className="panel-title">Acompanhamento por competência</span>
+            {workflow.map((item) => (
+              <div key={item.label} className="panel-row">
+                <span>{item.label}</span>
+                <strong>{item.status}</strong>
               </div>
             ))}
+          </div>
+          <div className="supervision-note">
+            Os agentes executam o trabalho repetitivo. Sua equipe mantém a
+            supervisão, revisa divergências e autoriza o que exige decisão técnica.
           </div>
         </div>
       </div>

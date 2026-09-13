@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { CONTACT_URL } from "../content";
 
 const links = [
   { href: "#contadores", label: "O escritório" },
   { href: "#agentes", label: "Agentes" },
   { href: "#integracoes", label: "Integrações" },
   { href: "#como", label: "Como funciona" },
+  { href: "#duvidas", label: "Dúvidas" },
 ];
 
 export function Header() {
@@ -33,11 +35,11 @@ export function Header() {
         ))}
       </nav>
       <div className="header-actions">
-        <a href="#" className="muted-link">
-          Entrar
+        <a href="https://cadu.ia.br" className="muted-link">
+          Sou empresário
         </a>
-        <a href="#comecar" className="btn btn-primary header-cta">
-          Abrir minha conta
+        <a href={CONTACT_URL} className="btn btn-primary header-cta">
+          Agendar diagnóstico
         </a>
         <button
           type="button"

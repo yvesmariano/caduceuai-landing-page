@@ -1,24 +1,23 @@
-import { contadoresItems, empresasItems } from "../content";
+import { CONTACT_URL, contadoresItems, empresasItems } from "../content";
 
 export function Tracks() {
   return (
     <section className="tracks">
       <div className="tracks-inner">
         <div className="tracks-intro">
-          <h2>O escritório digitalizado — e o que seus clientes ganham</h2>
+          <h2>Mais capacidade para sua equipe. Uma experiência melhor para seus clientes.</h2>
           <p>
-            Primeiro o seu operacional. Depois, uma oferta melhor para vender à
-            sua carteira.
+            Automatize o trabalho repetitivo e ofereça um atendimento digital
+            com a identidade do seu escritório.
           </p>
         </div>
         <div className="tracks-grid">
           <div id="empresas" className="track-card track-empresas">
             <span className="eyebrow">O que você entrega aos seus clientes</span>
-            <h3>Uma oferta que nenhuma ferramenta faz igual</h3>
+            <h3>Atendimento digital com a marca do seu escritório</h3>
             <p className="track-lead">
-              Com a caduceu.ai por baixo, o seu escritório passa a oferecer o que
-              hoje só as contabilidades digitais oferecem — com o seu nome na
-              porta.
+              Seus clientes acessam serviços contábeis e recebem atualizações sem
+              perder o vínculo com a sua marca e com a sua equipe.
             </p>
             <div className="feature-list">
               {empresasItems.map((item) => (
@@ -32,20 +31,21 @@ export function Tracks() {
               ))}
             </div>
             <div className="track-footer">
-              <a href="#comecar" className="btn btn-wine">
-                Ver o material comercial
+              <a href={CONTACT_URL} className="btn btn-wine">
+                Agendar diagnóstico gratuito
               </a>
               <span className="track-note">
-                endereço fiscal + certificado digital inclusos
+                benefícios disponíveis conforme o plano
               </span>
             </div>
           </div>
           <div id="contadores" className="track-card track-contadores">
             <span className="eyebrow">Para contadores</span>
-            <h3>Escale a carteira 100x sem contratar</h3>
+            <h3>Reduza tarefas manuais em toda a carteira</h3>
             <p className="track-lead">
-              Digitalize o repetitivo e coloque agentes para fechar competência,
-              emitir e conciliar enquanto você atende.
+              Use agentes para preparar competências, emitir documentos e
+              conciliar dados. Sua equipe acompanha o andamento e revisa as
+              exceções.
             </p>
             <div className="feature-list">
               {contadoresItems.map((item) => (
@@ -59,8 +59,8 @@ export function Tracks() {
               ))}
             </div>
             <div className="track-footer">
-              <a href="#comecar" className="btn btn-cream">
-                Ver demo para escritórios
+              <a href={CONTACT_URL} className="btn btn-cream">
+                Agendar diagnóstico gratuito
               </a>
               <span className="track-note">white-label disponível</span>
             </div>

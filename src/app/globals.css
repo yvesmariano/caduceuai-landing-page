@@ -776,7 +776,7 @@ a:hover {
 
 .panel-placeholder {
   position: relative;
-  aspect-ratio: 4 / 3;
+  min-height: 300px;
   border: 1px solid rgba(246, 243, 236, 0.14);
   border-radius: 18px;
   background-image: repeating-linear-gradient(
@@ -785,39 +785,82 @@ a:hover {
     transparent 2px 11px
   );
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  gap: 12px;
+  padding: 32px;
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 0.1em;
   color: rgba(246, 243, 236, 0.42);
-  text-align: center;
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
+.panel-title {
+  margin-bottom: 10px;
+  color: var(--cream);
+  font-size: 13px;
+  text-align: left;
 }
 
-.stat {
-  padding: 22px 20px;
+.panel-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(246, 243, 236, 0.1);
+  border-radius: 9px;
+  background: rgba(26, 7, 18, 0.75);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.panel-row strong {
+  color: var(--teal);
+  font-weight: 500;
+}
+
+.supervision-note {
+  padding: 22px 24px;
   border: 1px solid rgba(246, 243, 236, 0.12);
   border-radius: 14px;
-}
-
-.stat-value {
-  font-family: var(--serif);
-  font-size: 38px;
-  line-height: 1;
-  color: var(--accent);
-}
-
-.stat-label {
-  margin-top: 8px;
-  font-size: 13.5px;
-  line-height: 1.45;
+  font-size: 14.5px;
+  line-height: 1.6;
   color: rgba(246, 243, 236, 0.55);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1.2fr);
+  gap: 70px;
+  align-items: start;
+}
+
+.faq .eyebrow {
+  color: rgba(246, 243, 236, 0.4);
+}
+
+.faq-list {
+  border-top: 1px solid rgba(246, 243, 236, 0.14);
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(246, 243, 236, 0.14);
+}
+
+.faq-item summary {
+  padding: 24px 36px 24px 0;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq-item p {
+  margin: -8px 0 24px;
+  max-width: 620px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(246, 243, 236, 0.58);
 }
 
 .cta-box {
@@ -938,83 +981,6 @@ a:hover {
   color: rgba(246, 243, 236, 0.3);
 }
 
-.gate {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 24px;
-  position: relative;
-  overflow: hidden;
-  background: var(--bg);
-  color: var(--cream);
-}
-
-.gate-glow {
-  position: absolute;
-  top: -280px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 900px;
-  height: 600px;
-  background: radial-gradient(closest-side, rgba(251, 139, 36, 0.18), transparent);
-  pointer-events: none;
-}
-
-.gate-mark {
-  position: relative;
-  font-size: 48px;
-  color: var(--accent);
-  animation: cad-rise 0.7s ease both;
-}
-
-.gate-eyebrow {
-  position: relative;
-  margin: 18px 0 0;
-  color: rgba(246, 243, 236, 0.4);
-  animation: cad-rise 0.7s 0.04s ease both;
-}
-
-.gate-title {
-  position: relative;
-  margin: 16px 0 0;
-  max-width: 640px;
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: clamp(36px, 5vw, 64px);
-  line-height: 1.04;
-  letter-spacing: -0.02em;
-  animation: cad-rise 0.7s 0.08s ease both;
-}
-
-.gate-lead {
-  position: relative;
-  margin: 18px 0 0;
-  max-width: 420px;
-  font-size: 17px;
-  line-height: 1.6;
-  color: rgba(246, 243, 236, 0.62);
-  animation: cad-rise 0.7s 0.12s ease both;
-}
-
-.gate-actions {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 14px;
-  margin-top: 36px;
-  animation: cad-rise 0.8s 0.16s ease both;
-}
-
-.gate-btn {
-  height: 52px;
-  padding: 0 28px;
-  font-size: 15.5px;
-}
-
 @media (max-width: 860px) {
   .header {
     padding: 14px 20px;
@@ -1040,6 +1006,11 @@ a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
 
   .hero,
