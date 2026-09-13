@@ -8,7 +8,7 @@ export function Hero() {
         Plataforma de agentes de IA para escritórios contábeis
       </div>
       <h1>
-        Seu escritório com até 100x mais clientes
+        Seu escritório com até 10x mais clientes
         <br />
         com <em>a mesma equipe</em>
       </h1>
