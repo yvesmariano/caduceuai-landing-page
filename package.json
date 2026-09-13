@@ -1,0 +1,33 @@
+{
+  "name": "caduceuai-landing-page",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "cf-typegen": "wrangler types",
+    "check": "tsc -b && vite build && wrangler deploy --dry-run",
+    "deploy": "npm run build && wrangler deploy",
+    "dev": "vite",
+    "preview": "npm run build && vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.52.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.0.0",
+    "wrangler": "^4.127.0"
+  },
+  "allowScripts": {
+    "workerd@1.20260911.1": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.28.1": true,
+    "fsevents@2.3.3": true
+  }
+}
