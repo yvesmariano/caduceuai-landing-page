@@ -401,13 +401,11 @@ a:hover {
   border-radius: 20px;
 }
 
-.track-empresas {
-  order: 2;
+.track-before {
   background: #fff9f2;
 }
 
-.track-contadores {
-  order: 1;
+.track-after {
   background: var(--wine);
   color: var(--cream);
 }
@@ -427,19 +425,19 @@ a:hover {
   text-wrap: pretty;
 }
 
-.track-empresas .track-lead {
+.track-before .track-lead {
   color: rgba(52, 8, 36, 0.62);
 }
 
-.track-contadores .track-lead {
+.track-after .track-lead {
   color: rgba(246, 243, 236, 0.6);
 }
 
-.track-empresas .eyebrow {
+.track-before .eyebrow {
   color: #9a031e;
 }
 
-.track-contadores .eyebrow {
+.track-after .eyebrow {
   color: var(--teal);
 }
 
@@ -456,11 +454,11 @@ a:hover {
   padding: 14px 0;
 }
 
-.track-empresas .feature {
+.track-before .feature {
   border-top: 1px solid rgba(52, 8, 36, 0.1);
 }
 
-.track-contadores .feature {
+.track-after .feature {
   border-top: 1px solid rgba(246, 243, 236, 0.12);
 }
 
@@ -472,11 +470,11 @@ a:hover {
   border-radius: 999px;
 }
 
-.track-empresas .feature-dot {
+.track-before .feature-dot {
   background: #e36414;
 }
 
-.track-contadores .feature-dot {
+.track-after .feature-dot {
   background: var(--teal);
 }
 
@@ -485,7 +483,7 @@ a:hover {
   font-weight: 500;
 }
 
-.track-empresas .feature-title {
+.track-before .feature-title {
   color: var(--wine);
 }
 
@@ -495,11 +493,11 @@ a:hover {
   line-height: 1.55;
 }
 
-.track-empresas .feature-desc {
+.track-before .feature-desc {
   color: rgba(52, 8, 36, 0.56);
 }
 
-.track-contadores .feature-desc {
+.track-after .feature-desc {
   color: rgba(246, 243, 236, 0.58);
 }
 
@@ -522,11 +520,11 @@ a:hover {
   font-size: 12px;
 }
 
-.track-empresas .track-note {
+.track-before .track-note {
   color: rgba(52, 8, 36, 0.45);
 }
 
-.track-contadores .track-note {
+.track-after .track-note {
   color: rgba(246, 243, 236, 0.4);
 }
 

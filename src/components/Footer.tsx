@@ -1,8 +1,7 @@
 import { CONTACT_URL } from "../content";
 
 const links = [
-  { href: "#empresas", label: "Empresas" },
-  { href: "#contadores", label: "Contadores" },
+  { href: "#operacao", label: "Operação" },
   { href: "#agentes", label: "Agentes" },
   { href: "#integracoes", label: "Integrações" },
   { href: CONTACT_URL, label: "Contato" },

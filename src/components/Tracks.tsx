@@ -1,26 +1,26 @@
-import { CONTACT_URL, contadoresItems, empresasItems } from "../content";
+import { centralizedItems, fragmentedItems } from "../content";
 
 export function Tracks() {
   return (
-    <section className="tracks">
+    <section id="operacao" className="tracks">
       <div className="tracks-inner">
         <div className="tracks-intro">
-          <h2>Mais capacidade para sua equipe. Uma experiência melhor para seus clientes.</h2>
+          <h2>De sistemas e planilhas espalhados para uma operação centralizada</h2>
           <p>
-            Automatize o trabalho repetitivo e ofereça um atendimento digital
-            com a identidade do seu escritório.
+            Reúna dados, prazos e pendências da carteira em um só fluxo de
+            trabalho.
           </p>
         </div>
         <div className="tracks-grid">
-          <div id="empresas" className="track-card track-empresas">
-            <span className="eyebrow">O que você entrega aos seus clientes</span>
-            <h3>Atendimento digital com a marca do seu escritório</h3>
+          <div className="track-card track-before">
+            <span className="eyebrow">Hoje</span>
+            <h3>A informação fica espalhada</h3>
             <p className="track-lead">
-              Seus clientes acessam serviços contábeis e recebem atualizações sem
-              perder o vínculo com a sua marca e com a sua equipe.
+              A equipe alterna entre sistemas, bancos, mensagens e planilhas para
+              descobrir o que já foi feito e o que ainda está pendente.
             </p>
             <div className="feature-list">
-              {empresasItems.map((item) => (
+              {fragmentedItems.map((item) => (
                 <div key={item.title} className="feature">
                   <span className="feature-dot" />
                   <div>
@@ -29,26 +29,17 @@ export function Tracks() {
                   </div>
                 </div>
               ))}
-            </div>
-            <div className="track-footer">
-              <a href={CONTACT_URL} className="btn btn-wine">
-                Agendar diagnóstico gratuito
-              </a>
-              <span className="track-note">
-                benefícios disponíveis conforme o plano
-              </span>
             </div>
           </div>
-          <div id="contadores" className="track-card track-contadores">
-            <span className="eyebrow">Para contadores</span>
-            <h3>Reduza tarefas manuais em toda a carteira</h3>
+          <div className="track-card track-after">
+            <span className="eyebrow">Com a caduceu.ai</span>
+            <h3>A operação trabalha em um só lugar</h3>
             <p className="track-lead">
-              Use agentes para preparar competências, emitir documentos e
-              conciliar dados. Sua equipe acompanha o andamento e revisa as
-              exceções.
+              Dados e rotinas da carteira se encontram em uma visão única. Sua
+              equipe acompanha o fluxo e atua onde precisa de atenção.
             </p>
             <div className="feature-list">
-              {contadoresItems.map((item) => (
+              {centralizedItems.map((item) => (
                 <div key={item.title} className="feature">
                   <span className="feature-dot" />
                   <div>
@@ -57,12 +48,6 @@ export function Tracks() {
                   </div>
                 </div>
               ))}
-            </div>
-            <div className="track-footer">
-              <a href={CONTACT_URL} className="btn btn-cream">
-                Agendar diagnóstico gratuito
-              </a>
-              <span className="track-note">white-label disponível</span>
             </div>
           </div>
         </div>

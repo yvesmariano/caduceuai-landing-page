@@ -3,49 +3,49 @@ export const CONTACT_URL =
 
 export const ctaLabel = "Agendar diagnóstico gratuito";
 
-export const empresasItems = [
+export const fragmentedItems = [
   {
-    title: "Contabilidade completa no seu nome",
-    desc: "Escrituração, balanço, folha e guias preparados para a revisão e a responsabilidade técnica do seu escritório.",
+    title: "Dados em lugares diferentes",
+    desc: "Informações divididas entre o sistema contábil, bancos, documentos, mensagens e planilhas.",
   },
   {
-    title: "Endereço fiscal incluso",
-    desc: "Sede comercial válida para o CNPJ do cliente, com correspondência digitalizada.",
+    title: "Controle manual de prazos",
+    desc: "A equipe confere listas e planilhas para saber quais competências estão em dia.",
   },
   {
-    title: "Certificado digital incluído",
-    desc: "e-CNPJ A1 emitido e renovado dentro das condições do plano contratado.",
+    title: "Trabalho repetido",
+    desc: "Os mesmos dados são copiados, conferidos e atualizados em mais de uma ferramenta.",
   },
   {
-    title: "Agente de IA no financeiro do cliente",
-    desc: "Conectado a bancos, meios de pagamento e notas para responder dúvidas e alertar o cliente com supervisão do escritório.",
+    title: "Status preso com cada pessoa",
+    desc: "Para entender uma pendência, é preciso perguntar a quem executou aquela etapa.",
   },
   {
-    title: "Implantação da carteira",
-    desc: "Importação em lote das empresas que você já atende, planejada para preservar a continuidade da operação.",
+    title: "Problemas descobertos tarde",
+    desc: "Divergências aparecem quando a entrega está próxima ou o cliente pede uma resposta.",
   },
 ];
 
-export const contadoresItems = [
+export const centralizedItems = [
   {
-    title: "Agente de declarações",
-    desc: "IRPF, ECD, ECF e DCTF pré-montadas a partir dos dados do cliente, prontas para revisão.",
+    title: "Carteira em uma visão única",
+    desc: "Veja competências, pendências e próximos passos organizados por CNPJ.",
   },
   {
-    title: "Agente de emissão fiscal",
-    desc: "NFS-e e NF-e em lote, com validação de tomador, CNAE e retenções.",
+    title: "Dados conectados às rotinas",
+    desc: "Sistemas, bancos e documentos alimentam o mesmo fluxo operacional.",
   },
   {
-    title: "Conciliação automática",
-    desc: "Extratos, adquirentes e notas são conciliados para sua equipe revisar as divergências.",
+    title: "Automação do trabalho repetitivo",
+    desc: "Agentes preparam documentos, conciliam dados e mantêm cada etapa atualizada.",
   },
   {
-    title: "Painel multi-CNPJ",
-    desc: "Status de cada competência, pendências e prazos da carteira inteira em uma tela.",
+    title: "Revisão orientada por exceções",
+    desc: "Sua equipe recebe as divergências que exigem análise e mantém o controle das decisões.",
   },
   {
-    title: "White-label",
-    desc: "Seus clientes acessam o agente com a marca do seu escritório.",
+    title: "Histórico de cada ação",
+    desc: "Consulte o que foi feito, quando aconteceu e qual etapa precisa de atenção.",
   },
 ];
 
