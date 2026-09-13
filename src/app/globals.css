@@ -464,18 +464,32 @@ a:hover {
 
 .feature-dot {
   flex: none;
-  margin-top: 5px;
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+  width: 20px;
+  height: 20px;
+  font-family: var(--mono);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .track-before .feature-dot {
-  background: #e36414;
+  color: #9a031e;
+}
+
+.track-before .feature-dot::before {
+  content: "×";
 }
 
 .track-after .feature-dot {
-  background: var(--teal);
+  color: var(--teal);
+}
+
+.track-after .feature-dot::before {
+  content: "✓";
 }
 
 .feature-title {
